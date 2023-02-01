@@ -1,0 +1,47 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+#header-text{
+    color:rgba(13, 153, 130, 0.87);
+    background-color: rgba(255, 221, 227, 0.3);
+    border-top:1px solid rgb(252, 165, 5);
+    text-align: center;
+    padding-bottom: 25px;
+    height: 30px;
+}
+#logo{
+    width: 150px;
+    display: flex;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+#focaccia{
+    width: 500px;
+    border-radius: 4px;
+}
+#grey-text{
+    text-align: center;
+    color: lightgrey;
+}
+#feature{
+    margin-top: 4px;
+    border-left: 1px solid rgb(252, 192, 80) ;
+    padding-left: 12px;
+    
+}
+span{
+    color:red
+}
+
+hr{
+    border-color: rgba(127, 240, 255,0.3);
+}
+
