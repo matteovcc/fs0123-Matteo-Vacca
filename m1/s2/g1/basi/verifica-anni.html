@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var anni = prompt("quanti anni hai?") //chiedo al browser di far apparire un prompt quanti anni hai con un input per inserire il numero
+
+        console.log(anni)
+
+        if(/*condizione*/ anni >= 18 && anni <= 110){ //se nel prompt verrà scritto uguale o over 18 verra stampato "sei maggiorenne" && per aggiungere un altra condizione 
+            document.write("sei maggiorenne")
+        }else if(anni > 110){
+            document.write("sei antico")
+        }else{
+            document.write("sei minorenne") // se nel prompt verrà scritto sopra 110 o meno di 18 verra stampato sei minorenne
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var myVar = "Ciao Mondo" //var locazioni di memoria , le consideriamo come un contenitore dentr una variabili ci può essere un numero una stringa e altri vari tipi di dato 
+        var numero = 5; //senza virgolette perche sarebbe una stringa
+
+        console.log(numero, myVar); //console.log è una funzione log
+
+        /* 
+        Tipi di dato 
+        */ 
+
+        //javascript è debolmente tipizzato ovvero che noi non siamo obbligati a specificare il tipo di dato basterà sollo scrivere il contenuto del dato stesso perchè javascript riconoscerà auotmaticamnete
+        
+        
+        
+        /*
+        string => " " oppure ' '
+        number => 5
+        boolean => true oppure false nel senso che ha 2 tipi di uscita o è vero o è falos
+        array => []
+        object => {}
+
+
+        */
+
+        var a = 2;
+        var b = 3;
+        var c = a + b;
+
+        console.log(c); 
+
+        /*
+        Operatori matematici 
+
+        + => somma
+        - => sottrazione
+        / => diivisone
+        * => moltiplicazione 
+        */
+
+
+        var nome = "Mario";
+        var saluto ="Ciao";
+
+        console.log(saluto + " " + nome)
+
+        /*
+        Conversione  tra tipi di dati 
+        */ 
+
+        var num = 10;
+        var strNum ="10";
+        
+        console.log(num + strNum) //la console stamperà 1010 concatenato  in una stringa  
+        console.log(num * strNum) // la console stamperà 100 perchè in caso di moltiplicazione verrà concatenato in un numero questo perchè + ha  funzioni aritmetiche e di concatenamento di stringhe  
+        console.log(num * "10a") // qua stamperà NaN Not A Number perchè 10a non è un valore numerico 
+
+
+        console.log(typeof num) // la console ti stamperà il tipo di dato num
+
+    </script>
+</body>
+</html>
