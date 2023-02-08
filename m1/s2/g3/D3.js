@@ -207,9 +207,12 @@ console.log(arr)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-numbers[numbers.length - 1] = 100;
-
-console.log(numbers);
+let listone = []
+console.log(listone)
+for (var i = 1; i <= 10, i++){
+  listone.push(i);
+}
+listone.pop(9)
+listone.push(100)
+console.log(listone)
 */
