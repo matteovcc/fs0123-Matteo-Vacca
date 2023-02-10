@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>La mia calcolatrice</title>
+</head>
+<body>
+    <h1>Calcolatrice <span><a href="https://github.com/matteovcc/fs0123-Matteo-Vacca/tree/master" target="_blank"> Matteo Vacca FS-0123-A</a></span></h1>
+    <div id="container">
+    <div>
+    <input type="text" id="display">
+</div>
+
+<div id="first-line">
+    <button data-tasto="1" onclick="aggiungiTasto(this)">1</button>
+    <button data-tasto="2" onclick="aggiungiTasto(this)">2</button>
+    <button data-tasto="3" onclick="aggiungiTasto(this)">3</button>
+    <button class="lightblue"data-tasto="+" onclick="aggiungiTasto(this)">+</button>
+    <button class="lightblue"data-tasto="√" onclick="aggiungiTasto(this)">√</button>
+    
+    </div>
+    <div id="second-line">    
+        <button data-tasto="4" onclick="aggiungiTasto(this)">4</button>
+        <button data-tasto="5" onclick="aggiungiTasto(this)">5</button>
+        <button data-tasto="6" onclick="aggiungiTasto(this)">6</button>
+        <button class="lightblue"data-tasto="-" onclick="aggiungiTasto(this)">-</button>
+        <button class="lightblue" data-tasto="(" onclick="aggiungiTasto(this)">(</button>
+       
+    </div>
+
+    <div id="third-line">    
+        <button data-tasto="7" onclick="aggiungiTasto(this)">7</button>
+        <button data-tasto="8" onclick="aggiungiTasto(this)">8</button>
+        <button data-tasto="9" onclick="aggiungiTasto(this)">9</button>
+        <button class ="lightblue" data-tasto="*" onclick="aggiungiTasto(this)">x</button>
+        <button class="lightblue" data-tasto=")" onclick="aggiungiTasto(this)">)</button>
+    </div>
+
+    <div id="fourth-line">
+        <button id="c" data-tasto="C" onclick="cancella()">C</button>
+        <button data-tasto="0" onclick="aggiungiTasto(this)">0</button>
+        <button class="lightblue" id="uguale" data-tasto="=" onclick="totale()">=</button>
+        <button class="lightblue" data-tasto="/" onclick="aggiungiTasto(this)">/</button>
+        <button id ="quadrato"class="lightblue"  data-tasto="**" onclick="aggiungiTasto(this)">x2</button>
+    </div>
+
+    <div id="memoria">
+        <button id="salva-memoria" onclick="addMemory()">Salva</button> 
+        <button id="mostra-memoria"onclick="recallMemory()">Display</button>
+    </div>
+
+    <p id="firma">Matteo Vacca</p>
+    <p id="legenda">Cliccando il tasto Salva possiamo salvare un numero singolo o il risultato di un espressione grazie alla funzione addMemory() che salva il valore attuale del numero o del risultato di un espressione dentro la variabile memoria(3 + 5 salverà 8  e non 3 + 5), e con la funzione mostraMemoria() prendiamo il valore da dentro la variabile memoria e lo visualizza nell' elemento input con ID #display</p>
+    
+
+
+    </div>
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    <script src="js/index.js"></script>
+</body>
+</html>

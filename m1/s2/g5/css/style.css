@@ -1,0 +1,123 @@
+body{
+    background-image: url(../img/background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-family:cursive;
+    color: lightblue;
+}
+a{
+    color:lightblue;
+}
+a:hover{
+    color:rgb(218, 213, 213)
+}
+
+#container{
+    background-color:rgba(58, 184, 125, 0.8) ;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 10px solid lightblue;
+}
+#display{
+    display:flex;
+    margin: 50px auto 20px auto;
+    height: 30px;
+    font-size: x-large;
+    border-radius: 10px;
+    border:1px solid rgb(70, 70, 136);
+
+}
+
+button{
+    width: 60px;
+    height: 45px;
+    border-radius:10px;
+    border: 1px solid goldenrod;
+    background-color:rgb(255, 255, 255);
+    color:goldenrod;
+    font-size: xx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#first-line, #second-line, #third-line, #fourth-line{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    
+}
+button:hover{
+    background-color: lightblue;
+}
+
+
+#uguale{
+    background-color: rgb(228, 217, 217);
+    border-radius: 30px;
+
+}
+.lightblue{
+    background-color: lightblue;
+    color: white;
+    border-radius: 30px;
+    font-size: xx-large;
+}
+.lightblue:hover{
+    color: goldenrod;
+}
+#firma{
+    display: flex;
+    justify-content: right;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: lightblue;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#c{
+    color:red;
+    border-radius: 30px;
+    background-color: rgb(228, 217, 217);
+}
+#c:hover{
+    background-color: rgb(155, 23, 23);
+    color: white;
+}
+
+
+#memoria{
+    display:flex;
+    justify-content: space-around;
+}
+
+#memoria button{
+    width:100px;
+    border-radius: 30px;
+    font-size:medium;
+    border:2px solid rgb(255, 0, 0);
+    background-color: rgb(51, 51, 51);
+}
+
+#memoria button:hover{
+    color: white;
+}
+
+#legenda{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightblue;
+    font-style: italic;
+    margin-top:40px;
+    border: 2px dashed  rgba(58, 184, 125, 0.8);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#quadrato{
+    font-size:25px;
+}
