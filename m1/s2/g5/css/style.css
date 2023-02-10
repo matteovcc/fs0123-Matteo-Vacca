@@ -23,6 +23,7 @@ a:hover{
     margin: 0 auto;
     border-radius: 20px;
     border: 10px solid lightblue;
+
 }
 #display{
     display:flex;
@@ -43,6 +44,7 @@ button{
     color:goldenrod;
     font-size: xx-large;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
 #first-line, #second-line, #third-line, #fourth-line{
@@ -109,13 +111,14 @@ button:hover{
 
 #legenda{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: lightblue;
+    color: rgb(118, 199, 226);
     font-style: italic;
     margin-top:40px;
     border: 2px dashed  rgba(58, 184, 125, 0.8);
     text-align: center;
     padding: 10px;
     border-radius: 10px;
+    
 }
 
 #quadrato{

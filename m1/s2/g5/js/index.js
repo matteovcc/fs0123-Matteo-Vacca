@@ -2,14 +2,16 @@ function aggiungiTasto(elemento){
     let tasto = elemento.getAttribute("data-tasto")
     let display = document.querySelector("#display")
 
-    //Radice Quadrata
-    if (tasto === "√") {
-    display.value += "Math.sqrt("
-    }else {
     display.value += tasto
-    }
+    
 }
 
+function quadrato(){
+    display.value = Math.pow(display.value, 2)
+}
+function radice(){
+    display.value = Math.sqrt(display.value)
+}
 
 function totale(){
     let display = document.querySelector("#display")
