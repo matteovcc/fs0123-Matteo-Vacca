@@ -40,6 +40,6 @@ function addMemory() {
 
 function recallMemory() {
     let display = document.querySelector('#display')
-    document.querySelector("#salva-memoria").addEventListener("click", recallMemory)
+    document.querySelector("#mostra-memoria").addEventListener("click", recallMemory)
     display.value = memoria
 }
