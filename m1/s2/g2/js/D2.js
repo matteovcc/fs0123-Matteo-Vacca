@@ -1,4 +1,4 @@
-/*
+  /*
 REGOLE
 - Tutte le risposte devono essere scritte in JavaScript
 - Se sei in difficoltà puoi chiedere aiuto a un Teaching Assistant
@@ -29,8 +29,9 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA 
+
 let nome = "Matteo";
-*/
+
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
