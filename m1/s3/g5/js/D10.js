@@ -52,7 +52,7 @@ console.log(me)
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
 me.skills.pop()
-//console.log(me)
+console.log(me)
 
 
 // Funzioni
@@ -155,9 +155,9 @@ console.log(whatDayIsIt())
 */
 
 function howManyDays(date) {
-  const today = new Date()
-  const oneDay = 24 * 60 * 60 * 1000
-  const diffDays = Math.round(Math.abs((today - date) / oneDay))
+  let today = new Date()
+  let oneDay = 24 * 60 * 60 * 1000 
+  let diffDays = Math.round(Math.abs((today - date) / oneDay))
   return diffDays
 }
 const myDate = new Date("2023-02-16")
@@ -477,6 +477,7 @@ function addToTr(){
     tr[i].classList.add("test")
   }
 }
+addToTr()
 
 // [EXTRA] JS Avanzato
 
@@ -496,7 +497,7 @@ let halfTree = function (a){
     console.log("*".repeat(i+1))
   }
 }
-halfTree(3)
+halfTree(5)
 
 
 
