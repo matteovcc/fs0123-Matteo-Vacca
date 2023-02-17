@@ -123,12 +123,13 @@ console.log(isThisAnEmail("sonounaemailfinta"))
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
-function whatDayIsIt(){
-  let giorni = ["lunedi","martedu","mercoledi","giovedi","venerdi","sabato","domenica"]
-  let date = new Date()
-  let dayofWeek = date.getDay()
-  return giorni[dayofWeek]
+function whatDayIsIt() {
+  let daysOfWeek = ["Domenica", "lunedi", "martedi ", "mercoledi", "giovedi", "venerdi", "sabato"]
+  let now = new Date()
+  let dayOfWeek = daysOfWeek[now.getDay()]
+  return dayOfWeek
 }
+
 console.log(whatDayIsIt())
 
 /* ESERCIZIO 8
@@ -155,9 +156,10 @@ console.log(whatDayIsIt())
 */
 
 function howManyDays(date) {
-  let today = new Date()
   let oneDay = 24 * 60 * 60 * 1000 
-  let diffDays = Math.round(Math.abs((today - date) / oneDay))
+  let now = new Date()
+  let diffM = now - date
+  let diffDays = Math.round(diffM / oneDay)
   return diffDays
 }
 const myDate = new Date("2023-02-16")
@@ -309,6 +311,7 @@ const movies = [
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
 
+
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
   */
@@ -338,19 +341,16 @@ function onlyTheYears(movies){
   })
 }
 console.log(onlyTheYears(movies))
+
+
+
 /* ESERCIZIO 15
 Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
-function onlyInLastMillennium(movies) {
-  let currentYear = new Date().getFullYear()
-  let lastMillenniumStartYear = currentYear - 1000 
-  let filteredMovies = movies.filter(movie => {
-    let movieYear = parseInt(movie.Year)
-    return movieYear >= lastMillenniumStartYear && movieYear <= currentYear
-  });
-  return filteredMovies
+function onlyInLastMillennium() {
+  return movies.filter(movie => movie.Year  >= 1000 && movie.Year  < 2000 )
 }
-console.log(onlyInLastMillennium(movies))
+console.log( onlyInLastMillennium());
 
 
 /* ESERCIZIO 16
@@ -359,10 +359,10 @@ Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli 
 function sumAllTheYears(movies) {
   let sum = 0;
   for (let i = 0; i < movies.length; i++) {
-    let year = parseInt(movies[i].Year);
-    sum += year;
+    let year = parseInt(movies[i].Year)
+    sum += year
   }
-  return sum;
+  return sum
 }
 
 console.log(sumAllTheYears(movies))
@@ -467,7 +467,7 @@ function deleteLi(){
   let myList = document.getElementById("myList")
   myList.textContent=" "
 }
-deleteLi()
+//deleteLi()
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
